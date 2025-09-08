@@ -13,7 +13,7 @@
     // if you opt for tabs :)
     "window.density.editorTabHeight": "compact",
     "window.menuBarVisibility": "compact",
-    "window.restoreWindows": "none",
+    "window.restoreWindows": "all",
     // vscodevim settings
     "vim.useSystemClipboard": true,
     "vim.hlsearch": true,
@@ -62,6 +62,14 @@
     ],
     // which key settings
     "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["]", "d"],
+            "commands": ["editor.action.marker.next"]
+        },
+        {
+            "before": ["[", "d"],
+            "commands": ["editor.action.marker.prev"]
+        },
         {
             "before": [
                 "<space>"
